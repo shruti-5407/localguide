@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalGuide - Business Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logohome.jpg" alt="Localguide Logo" height="100px" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#categories">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#why-choose-us">Why Choose Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a href="business.html" class="btn btn-theme btn-lg">Register For Business</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="theme-form p-4 bg-white rounded shadow">
+                    <h2 class="text-center mb-4">Business Registration</h2>
+
+                    <div class="mb-3">
+                        <label for="businessName" class="form-label">Business Name</label>
+                        <input type="text" class="form-control" id="businessName" name="businessName" autocomplete="off" required>
+                        <div class="errormessage text-danger mt-1 dn">Please enter a Business Name</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="pincode" class="form-label">Pincode</label>
+                        <input type="text" class="form-control" id="pincode" name="pincode" autocomplete="off" maxlength="6" inputmode="numeric" pattern="[0-9]*" required>
+                        <div class="errormessage text-danger mt-1 dn">Please Enter a Pincode</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="block_num" class="form-label">Block Number / Building Name</label>
+                        <input type="text" class="form-control" id="block_num" name="block_num" autocomplete="off" maxlength="250" required>
+                        <div class="errormessage text-danger mt-1 dn">Please Enter Block Number / Building Name</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="street" class="form-label">Street / Colony Name</label>
+                        <input type="text" class="form-control" id="street" name="street" autocomplete="off" maxlength="250" required>
+                        <div class="errormessage text-danger mt-1 dn">Please Enter Street / Colony Name</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="area" class="form-label">Area</label>
+                        <input type="text" class="form-control" id="area" name="area" autocomplete="off" required>
+                        <div class="errormessage text-danger mt-1 dn">Please Select Area</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="landmark" class="form-label">Landmark</label>
+                        <input type="text" class="form-control" id="landmark" name="landmark" autocomplete="off" maxlength="250" required>
+                        <div class="errormessage text-danger mt-1 dn">Please Enter Landmark</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" name="city" autocomplete="off" required>
+                            <div class="errormessage text-danger mt-1 dn">Please Select City</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="state" class="form-label">State</label>
+                            <input type="text" class="form-control" id="state" name="state" autocomplete="off" required>
+                            <div class="errormessage text-danger mt-1 dn">Please Select State</div>
+                        </div>
+                    </div>
+
+                    <a href="dashboard/dashboardshop.html" class="btn btn-theme w-100">Save and Continue</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo and Description -->
+                <div class="footer-logo">
+                    <img src="images/logohome.jpg" alt="Logo" class="logo">
+                </div>
+
+                <!-- Links -->
+                <div class="footer-links">
+                    <h4>Online Platform</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Instructor</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Purchase Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">News & Articles</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Sign In/Registration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscription -->
+                <div class="footer-subscription">
+                    <h4>Contacts</h4>
+                    <p>Enter your email address to register to our newsletter subscription</p>
+                    <form class="subscription-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>Copyright © 2024 All Rights Reserved by LocalGuide</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
